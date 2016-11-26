@@ -33,3 +33,12 @@
 | image | 画像 | string |
 | user_id | Usersテーブルの外部キー | intger |
 | group_id | Groupsテーブルの外部キー | intger |
+
+
+
+##Ruby version
+2.3.1
+
+
+##Rails version
+5.0.0.1
