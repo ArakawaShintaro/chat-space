@@ -8,12 +8,23 @@
 
 ※その他deviseの自動生成
 
+- アソシエーション
+  - has many messages
+  - has many group_users
+  - has many groups through: :group_users
+
+
 
 ### Groupsテーブル
 
 | column | 説明 | type |
 |---|---|---|
 | name | グループ名 | string |
+
+- アソシエーション
+  - has many messages
+  - has many group_users
+  - has many users through: :group_users
 
 
 
@@ -24,6 +35,10 @@
 | user_id | Usersテーブルの外部キー | intger |
 | group_id | Groupsテーブルの外部キー | intger |
 
+- アソシエーション
+  - belongs_to :user
+  - belongs_to :group
+
 
 
 ### Messagesテーブル
@@ -33,6 +48,10 @@
 | image | 画像 | string |
 | user_id | Usersテーブルの外部キー | intger |
 | group_id | Groupsテーブルの外部キー | intger |
+
+- アソシエーション
+  - belongs_to :user
+  - belongs_to :group
 
 
 
