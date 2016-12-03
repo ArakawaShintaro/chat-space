@@ -6,10 +6,8 @@
     .nav__user
       .nav__user__name
         Arakawa Shintaro
-        %i
-          = fa_icon "pencil-square-o"
-          = fa_icon "cog"
-
+        = fa_icon "pencil-square-o"
+        = link_to "<i class='fa fa-cog' style='color:white;'></i>".html_safe, edit_user_registration_path
     .nav__chat
       .chat-group
         .chat-group__name
