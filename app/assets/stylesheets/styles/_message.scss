@@ -3,7 +3,7 @@
   height: 100vh;
 }
 
-.flash-message__notice {
+.flash-message--notice {
   background: $accent_blue;
   width: 100%;
   height: 25px;
@@ -11,7 +11,7 @@
   text-align: center;
 }
 
-.flash-message__alert {
+.flash-message--alert {
   background: $alert_red;
   width: 100%;
   height: 25px;
