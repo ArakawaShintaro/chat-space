@@ -1,0 +1,121 @@
+.flash-message
+  %p チャットグループが作成されました
+
+.container
+  .nav
+    .nav__user
+      .nav__user__name
+        Arakawa Shintaro
+        %i
+          = fa_icon "pencil-square-o"
+          = fa_icon "cog"
+
+    .nav__chat
+      .chat-group
+        .chat-group__name
+          %p TECH::CAMP
+        .chat-group__message-latest
+          %p まだメッセージはありません
+      .chat-group
+        .chat-group__name
+          %p OSAKA
+        .chat-group__message-latest
+          まだメッセージはありません
+      .chat-group
+        .chat-group__name
+          %p TECH::CAMP
+        .chat-group__message-latest
+          %p まだメッセージはありません
+      .chat-group
+        .chat-group__name
+          %p OSAKA
+        .chat-group__message-latest
+          まだメッセージはありません
+      .chat-group
+        .chat-group__name
+          %p TECH::CAMP
+        .chat-group__message-latest
+          %p まだメッセージはありません
+      .chat-group
+        .chat-group__name
+          %p OSAKA
+        .chat-group__message-latest
+          まだメッセージはありません
+
+  .chat-contents
+    .group
+      .left-content
+        .group__name
+          %h2 TECH::CAMP
+        .group__member
+          Members: arakawa magehira
+      .right-content
+        .group__edit-btn
+          = link_to "Edit", "#"
+
+    .chat-content
+      .messages
+        .message-content
+          .message-content__top
+            .message-content__user-name
+              %p ARAKAWASHINTARO
+            .message-content__time
+              %p 2016/12/03 05:23:45
+          .message-content__text
+            %p hogehgehogehgoehogheohgoehogheohgoehoheoh
+        .message-content
+          .message-content__top
+            .message-content__user-name
+              %p ARAKAWASHINTARO
+            .message-content__time
+              %p 2016/12/03 05:23:45
+          .message-content__text
+            %p hogehgehogehgoehogheohgoehogheohgoehoheoh
+        .message-content
+          .message-content__top
+            .message-content__user-name
+              %p ARAKAWASHINTARO
+            .message-content__time
+              %p 2016/12/03 05:23:45
+          .message-content__text
+            %p hogehgehogehgoehogheohgoehogheohgoehoheoh
+        .message-content
+          .message-content__top
+            .message-content__user-name
+              %p ARAKAWASHINTARO
+            .message-content__time
+              %p 2016/12/03 05:23:45
+          .message-content__text
+            %p hogehgehogehgoehogheohgoehogheohgoehoheoh
+        .message-content
+          .message-content__top
+            .message-content__user-name
+              %p ARAKAWASHINTARO
+            .message-content__time
+              %p 2016/12/03 05:23:45
+          .message-content__text
+            %p hogehgehogehgoehogheohgoehogheohgoehoheoh
+        .message-content
+          .message-content__top
+            .message-content__user-name
+              %p ARAKAWASHINTARO
+            .message-content__time
+              %p 2016/12/03 05:23:45
+          .message-content__text
+            %p hogehgehogehgoehogheohgoehogheohgoehoheoh
+        .message-content
+          .message-content__top
+            .message-content__user-name
+              %p ARAKAWASHINTARO
+            .message-content__time
+              %p 2016/12/03 05:23:45
+          .message-content__text
+            %p hogehgehogehgoehogheohgoehogheohgoehoheoh
+
+    .message-form
+      = form_for @message do |f|
+        = f.text_field :text, class: "message-form__form-text", placeholder: "type a message"
+        %label{ for: "file_photo" }
+          = fa_icon "file-image-o"
+          = f.file_field :image, class: "message-form__form-image", id: "file_photo"
+        = f.submit "Send", class: "message-form__btn-submit"
