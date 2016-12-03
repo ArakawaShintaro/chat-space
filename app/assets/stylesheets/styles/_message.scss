@@ -11,15 +11,15 @@
   text-align: center;
 }
 
-.left-content {
+.nav {
   float: left;
 }
 
-.right-content {
+.chat-contents {
   float: left;
 }
 
-.user {
+.nav__user {
   height: 100px;
   width: 300px;
   background-color: #253141;
@@ -32,7 +32,7 @@
   }
 }
 
-.chat {
+.nav__chat {
   height: calc(100vh - 100px);
   overflow: scroll;
   width: 300px;
@@ -50,7 +50,7 @@
       color: #FFF;
     }
 
-    &__message {
+    &__message-latest {
       font-size: 11px;
       padding: 5px 0 $large_space $small_space;
     }
@@ -62,11 +62,11 @@
   width: calc(100vw - 300px);
   border-bottom: 1px solid #eeeeee;
 
-  .right-content {
+  .left-content {
     float: left;
   }
 
-  .left-content {
+  .right-content {
     float: right;
   }
 
@@ -101,7 +101,7 @@
   background: #FAFAFA;
   overflow: scroll;
 
-  .message {
+  .messages {
     padding: 46px $large_space $small_space $large_space;
     .message-content {
       background-color: #FAFAFA;

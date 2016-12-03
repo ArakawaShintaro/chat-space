@@ -2,60 +2,59 @@
   %p チャットグループが作成されました
 
 .container
-
-  .left-content
-    .user
-      .user__name
+  .nav
+    .nav__user
+      .nav__user__name
         Arakawa Shintaro
         %i
           = fa_icon "pencil-square-o"
           = fa_icon "cog"
 
-    .chat
+    .nav__chat
       .chat-group
         .chat-group__name
           %p TECH::CAMP
-        .chat-group__message
+        .chat-group__message-latest
           %p まだメッセージはありません
       .chat-group
         .chat-group__name
           %p OSAKA
-        .chat-group__message
+        .chat-group__message-latest
           まだメッセージはありません
       .chat-group
         .chat-group__name
           %p TECH::CAMP
-        .chat-group__message
+        .chat-group__message-latest
           %p まだメッセージはありません
       .chat-group
         .chat-group__name
           %p OSAKA
-        .chat-group__message
+        .chat-group__message-latest
           まだメッセージはありません
       .chat-group
         .chat-group__name
           %p TECH::CAMP
-        .chat-group__message
+        .chat-group__message-latest
           %p まだメッセージはありません
       .chat-group
         .chat-group__name
           %p OSAKA
-        .chat-group__message
+        .chat-group__message-latest
           まだメッセージはありません
 
-  .right-content
+  .chat-contents
     .group
-      .right-content
+      .left-content
         .group__name
           %h2 TECH::CAMP
         .group__member
           Members: arakawa magehira
-      .left-content
+      .right-content
         .group__edit-btn
           = link_to "Edit", "#"
 
     .chat-content
-      .message
+      .messages
         .message-content
           .message-content__top
             .message-content__user-name
