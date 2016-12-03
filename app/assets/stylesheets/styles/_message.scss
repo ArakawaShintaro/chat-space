@@ -7,7 +7,7 @@
   background: $accent_blue;
   width: 100%;
   height: 25px;
-  color: #FFFFFF;
+  color: #FFF;
   text-align: center;
 }
 
@@ -23,7 +23,7 @@
   height: 100px;
   width: 300px;
   background-color: #253141;
-  color: #FFFFFF;
+  color: #FFF;
 
   &__name {
     font-size: $nomal_text;
@@ -37,7 +37,7 @@
   overflow: scroll;
   width: 300px;
   background-color: #2f3e51;
-  color: #FFFFFF;
+  color: #FFF;
 
   .chat-group {
     &:hover {
@@ -47,7 +47,7 @@
     &__name {
       font-size: 15px;
       padding: $small_space 0 5px $small_space;
-      color: #FFFFFF;
+      color: #FFF;
     }
 
     &__message {
@@ -135,12 +135,12 @@
 .message-form {
   height: 50px;
   padding: $small_space $large_space;
-  background-color: #DDDDDD;
+  background-color: #DDD;
   position: relative;
 
   &__form {
     height: 50px;
-    background-color: #DDDDDD;
+    background-color: #DDD;
   }
 
   &__form-text {
