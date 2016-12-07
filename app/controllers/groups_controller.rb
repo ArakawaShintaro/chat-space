@@ -3,6 +3,6 @@ class GroupsController < ApplicationController
   def new
   end
 
-  def crete
+  def create
   end
 end
