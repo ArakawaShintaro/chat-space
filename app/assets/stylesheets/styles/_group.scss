@@ -331,3 +331,9 @@ $textarea_height: 50px;
     border: 0;
   }
 }
+
+.clearfix:after {
+  content: "";
+  clear: both;
+  display: block;
+}
